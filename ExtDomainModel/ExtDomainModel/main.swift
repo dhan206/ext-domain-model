@@ -132,7 +132,7 @@ public struct Money: CustomStringConvertible, Mathematics {
 ////////////////////////////////////
 // Job
 //
-open class Job {
+open class Job: CustomStringConvertible {
     fileprivate var title : String
     fileprivate var type : JobType
     
@@ -175,7 +175,7 @@ open class Job {
 ////////////////////////////////////
 // Person
 //
-open class Person {
+open class Person: CustomStringConvertible {
     open var firstName : String = ""
     open var lastName : String = ""
     open var age : Int = 0
@@ -237,7 +237,7 @@ open class Person {
 ////////////////////////////////////
 // Family
 //
-open class Family {
+open class Family: CustomStringConvertible {
     fileprivate var members : [Person] = []
     
     public init(spouse1: Person, spouse2: Person) {
